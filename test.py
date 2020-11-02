@@ -5,5 +5,3 @@ def listToString(namesList):
     return str1
 a = ['Veronica', "Padilla", "Madilla", "Piston", "Gibsona"]
 print(listToString(a))
-
-

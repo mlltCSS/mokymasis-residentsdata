@@ -1,8 +1,13 @@
 import csv
 
-file = csv.reader(open('dataset.csv', newline=''), delimiter=',', quotechar='|')
+file = csv.reader(open('dataset2.csv', newline=''), delimiter=',', quotechar='|')
 
 for line in file:
-    y = (line[1].split(','))[0].split(' ')
-    if len(y[1]) >= 7:
-        print(" ".join(y))
+    x = 0
+    name = line[1].split(',')
+    name = name[0].split(' ')
+    surnames = name[1:]
+    for surname in surnames:
+        x = x + len(surname)
+    if x >= 7:
+        print(' '.join(name))
