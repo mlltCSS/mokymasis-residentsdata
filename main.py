@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import csv
 
 file = csv.reader(open('dataset.csv', newline=''), delimiter=',', quotechar='|')
